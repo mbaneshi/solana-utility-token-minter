@@ -1,0 +1,54 @@
+{
+  "name": "solana-utility-token",
+  "version": "1.0.0",
+  "description": "Complete Solana SPL Token deployment and management system",
+  "main": "index.js",
+  "scripts": {
+    "cli": "ts-node cli/token-cli.ts",
+    "deploy:devnet": "ts-node scripts/deploy-devnet.ts",
+    "deploy:mainnet": "ts-node scripts/deploy-mainnet.ts",
+    "create-metadata": "ts-node scripts/create-metadata.ts",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:devnet": "ts-node scripts/test-devnet.ts",
+    "test:integration": "jest --testPathPattern=integration",
+    "admin": "cd admin && npm run dev",
+    "build:admin": "cd admin && npm run build",
+    "verify": "ts-node scripts/verify-setup.ts",
+    "monitor": "ts-node scripts/monitor-token.ts"
+  },
+  "keywords": [
+    "solana",
+    "spl-token",
+    "utility-token",
+    "metaplex",
+    "blockchain"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@metaplex-foundation/js": "^0.19.4",
+    "@metaplex-foundation/mpl-token-metadata": "^3.2.1",
+    "@solana/spl-token": "^0.4.0",
+    "@solana/web3.js": "^1.91.0",
+    "axios": "^1.6.2",
+    "bs58": "^5.0.0",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "inquirer": "^8.2.6"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/inquirer": "^9.0.7",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^20.10.5",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
