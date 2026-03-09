@@ -55,7 +55,7 @@ solana-keygen pubkey ~/.config/solana/id.json
 ### 1. Clone and Install
 
 ```bash
-cd /Users/nerd/freelancer/12-mint-solana-utility-token
+cd solana-utility-token-minter
 
 # Install dependencies
 npm install

@@ -39,7 +39,7 @@ A comprehensive, production-ready system for creating, deploying, and managing S
 
 ```bash
 # 1. Clone and install
-cd /Users/nerd/freelancer/12-mint-solana-utility-token
+cd solana-utility-token-minter
 npm install
 
 # 2. Configure environment
